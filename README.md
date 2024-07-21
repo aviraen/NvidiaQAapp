@@ -53,14 +53,3 @@ Query history tracking
 ```bash
 git clone https://github.com/aviraen/NvidiaQAapp.git
 cd cuda_crawler
-
-2. Create and activate a virtual environment:
-python -m venv venv
-
-3. Install required packages
-pip install -r requirements.txt
-
-
-
-
-
