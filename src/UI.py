@@ -1,5 +1,6 @@
-import streamlit as st
 from QAgen import process_query
+import streamlit as st
+
 
 def main():
     st.set_page_config(page_title="CUDA Query Assistant", page_icon="🚀", layout="wide")
