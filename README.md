@@ -30,6 +30,23 @@ Query history tracking
 4. Zilliz Cloud account
 5. OpenAI API key
 
+# Obtaining Zilliz Cloud Token
+### To use the Zilliz Cloud (Milvus) service:
+
+Sign up for a Zilliz Cloud account at cloud.zilliz.com.
+Create a new cluster or use an existing one.
+In the cluster details, find the "Endpoint" and "Token" information.
+Copy these values; you'll need them for configuration.
+
+## Project Structure
+
+Retrieval.py: Handles connection to Milvus, query expansion, hybrid retrieval, and reranking.
+question_answering.py: Integrates retrieval with GPT-3.5 for answer generation.
+UI.py: Streamlit-based user interface.
+requirements.txt: List of Python dependencies.
+.env: Configuration file for environment variables (not tracked by Git).
+README.md: This file.
+
 ## Installation
 
 1. Clone the repository:
@@ -42,3 +59,8 @@ python -m venv venv
 
 3. Install required packages
 pip install -r requirements.txt
+
+
+
+
+
