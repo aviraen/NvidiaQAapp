@@ -40,9 +40,9 @@ Query history tracking
 
 ## Project Structure
 
-- [`retrieval.py`](./retrieval.py): Handles connection to Milvus, query expansion, hybrid retrieval, and reranking.
-- [`question_answering.py`](./question_answering.py): Integrates retrieval with GPT-3.5 for answer generation.
-- [`ui.py`](./ui.py): Streamlit-based user interface.
+- [`Retrieval.py`](./retrieval.py): Handles connection to Milvus, query expansion, hybrid retrieval, and reranking.
+- [`QAgen.py`](./QAgen.py): Integrates retrieval with GPT-3.5 for answer generation.
+- [`UI.py`](./UI.py): Streamlit-based user interface.
 - [`requirements.txt`](./requirements.txt): List of Python dependencies.
 - [`Chunking.py`](./Chunking.py): Chunk the data using sementic similrity method and embed them using sentence transformer model.
 - [`README.md`](./README.md): This file.
