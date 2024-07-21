@@ -40,13 +40,12 @@ Query history tracking
 
 ## Project Structure
 
-1. Retrieval.py: Handles connection to Milvus, query expansion, hybrid retrieval, and reranking.
-2. QAgen.py: Integrates retrieval with GPT-3.5 for answer generation.
-3. Chunking.py: Chunk the data using Sementic Similrity and embed the chunks using sentence transformer  model.
-4. UI.py: Streamlit-based user interface.
-5. requirements.txt: List of Python dependencies.
-6. .env: Configuration file for environment variables (not tracked by Git).
-7. README.md: This file.
+1. **Retrieval.py**: Handles connection to Milvus, query expansion, hybrid retrieval, and reranking.
+2. **QAgen.py**: Integrates retrieval with GPT-3.5 for answer generation.
+3. **Chunking.py**: Chunk the data using Sementic Similrity and embed the chunks using sentence transformer  model.
+4. **UI.py**: Streamlit-based user interface.
+5. **requirements.txt**: List of Python dependencies.
+6. **README.md**: This file.
 
 ## Installation
 
