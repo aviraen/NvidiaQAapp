@@ -1,1 +1,13 @@
-
+requests==2.31.0
+beautifulsoup4==4.12.2
+lxml==4.9.3
+pandas==1.5.3
+sentence-transformers==2.2.2
+scikit-learn==1.2.2
+pymilvus==2.2.12
+rank-bm25==0.2.1
+nltk==3.8.1
+torch==2.0.1
+openai==0.28.0
+streamlit==1.22.0
+python-dotenv==1.0.0
