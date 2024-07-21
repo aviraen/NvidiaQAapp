@@ -33,19 +33,19 @@ Query history tracking
 # Obtaining Zilliz Cloud Token
 ### To use the Zilliz Cloud (Milvus) service:
 
-Sign up for a Zilliz Cloud account at cloud.zilliz.com.
-Create a new cluster or use an existing one.
-In the cluster details, find the "Endpoint" and "Token" information.
-Copy these values; you'll need them for configuration.
+1. Sign up for a Zilliz Cloud account at cloud.zilliz.com.
+2. Create a new cluster or use an existing one.
+3. In the cluster details, find the "Endpoint" and "Token" information.
+4. Copy these values; you'll need them for configuration.
 
 ## Project Structure
 
-Retrieval.py: Handles connection to Milvus, query expansion, hybrid retrieval, and reranking.
-question_answering.py: Integrates retrieval with GPT-3.5 for answer generation.
-UI.py: Streamlit-based user interface.
-requirements.txt: List of Python dependencies.
-.env: Configuration file for environment variables (not tracked by Git).
-README.md: This file.
+1. Retrieval.py: Handles connection to Milvus, query expansion, hybrid retrieval, and reranking.
+2. question_answering.py: Integrates retrieval with GPT-3.5 for answer generation.
+3. UI.py: Streamlit-based user interface.
+4. requirements.txt: List of Python dependencies.
+5. .env: Configuration file for environment variables (not tracked by Git).
+6. README.md: This file.
 
 ## Installation
 
