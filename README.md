@@ -30,7 +30,7 @@ Query history tracking
 4. Zilliz Cloud account
 5. OpenAI API key
 
-# Obtaining Zilliz Cloud Token
+## Obtaining Zilliz Cloud Token
 ### To use the Zilliz Cloud (Milvus) service:
 
 1. Sign up for a Zilliz Cloud account at cloud.zilliz.com.
