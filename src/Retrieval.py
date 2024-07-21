@@ -5,11 +5,11 @@ from rank_bm25 import BM25Okapi
 import nltk
 from nltk.corpus import wordnet
 import torch
-import openai
 import numpy as np
-import streamlit as st
+
 ZILLIZ_ENDPOINT = "https://in03-60169b2a1d6a8d8.api.gcp-us-west1.zillizcloud.com"
 ZILLIZ_TOKEN = ""
+
 print("Connecting to Zilliz Cloud...")
 connections.connect(
     alias="default", 
@@ -18,11 +18,13 @@ connections.connect(
     secure=True
 )
 print("Connected successfully!")
+
 collection = Collection("cuda_docs_embeddings")
 collection.load()
+
 sentence_transformer = SentenceTransformer('sentence-transformers/all-MiniLM-L6-v2')
 cross_encoder = CrossEncoder('cross-encoder/ms-marco-MiniLM-L-6-v2')
-openai.api_key = "your_api_key"
+
 nltk.download('wordnet')
 nltk.download('averaged_perceptron_tagger')
 
@@ -68,3 +70,19 @@ def rerank(query, doc_ids, top_k=10):
     id_score_pairs.sort(key=lambda x: x[1], reverse=True)
     
     return [id for id, _ in id_score_pairs[:top_k]]
+
+def get_top_docs(query, num_docs=3):
+    expanded_query = query_expansion(query)
+    retrieved_ids = hybrid_retrieval(expanded_query)
+    reranked_ids = rerank(query, retrieved_ids)
+    
+    top_docs = collection.query(expr=f"id in {reranked_ids[:num_docs]}", output_fields=["content"])
+    return [doc['content'] for doc in top_docs]
+
+if __name__ == "__main__":
+    # Test the retrieval system
+    test_query = "How does CUDA handle memory management?"
+    top_docs = get_top_docs(test_query)
+    print(f"Top documents for query '{test_query}':")
+    for i, doc in enumerate(top_docs, 1):
+        print(f"{i}. {doc[:200]}...")
