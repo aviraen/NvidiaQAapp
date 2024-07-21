@@ -80,7 +80,6 @@ def get_top_docs(query, num_docs=3):
     return [doc['content'] for doc in top_docs]
 
 if __name__ == "__main__":
-    # Test the retrieval system
     test_query = "How does CUDA handle memory management?"
     top_docs = get_top_docs(test_query)
     print(f"Top documents for query '{test_query}':")
