@@ -19,4 +19,4 @@ for column in df.columns:
         df[column] = df[column].str.lower()
         df[column] = df[column].apply(remove_duplicate_sentences)
 df.to_csv('processed_file.csv', index=False)
-print("CSV file has been processed and saved as 'processed_file.csv'")
+print("saved as 'processed_file.csv'")
