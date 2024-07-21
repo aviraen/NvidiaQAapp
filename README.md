@@ -1,16 +1,17 @@
 ## ![download (1)](https://github.com/user-attachments/assets/f6c57ddc-2621-4d1f-b48e-9dd6666f85e5)                                                                         ![download (2)](https://github.com/user-attachments/assets/9bd300ba-1258-4117-9282-3322dedd1b42)
 
 # CUDA Documentation QA System
+
 ## Table of Contents
 
-Project Overview
-Prerequisites
-Installation
-Obtaining Zilliz Cloud Token
-Configuration
-Usage
-Project Structure
-Troubleshooting
+- [Project Overview](#project-overview)
+- [Prerequisites](#prerequisites)
+- [Installation](#installation)
+- [Obtaining Zilliz Cloud Token](#obtaining-zilliz-cloud-token)
+- [Configuration](#configuration)
+- [Usage](#usage)
+- [Project Structure](#project-structure)
+- [Troubleshooting](#troubleshooting)
 
 ## Project Overview
 This CUDA Documentation QA System is an advanced question-answering tool designed to assist users with queries related to NVIDIA CUDA programming. It leverages a sophisticated retrieval system, combining BM25 and dense vector search, followed by reranking and GPT-3.5 for answer generation.
@@ -54,3 +55,8 @@ Query history tracking
 git clone https://github.com/aviraen/NvidiaQAapp.git
 cd cuda_crawler
 
+Create and activate a virtual environment:
+python -m venv venv
+
+Install required packages:
+pip install -r requirements.txt
