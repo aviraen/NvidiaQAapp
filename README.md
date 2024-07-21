@@ -24,4 +24,37 @@ Create a `.env` file in the project root and add:
 ZILLIZ_ENDPOINT=your_zilliz_endpoint
 ZILLIZ_TOKEN=your_zilliz_token
 OPENAI-API-KEY
+## Running the System
+
+### 1. Web Crawling
+
+Run the web crawler to scrape CUDA documentation:
+This will crawl https://docs.nvidia.com/cuda/ and its sublinks up to a depth of 5 levels, saving the data to `cuda_documentation.csv`.
+
+### 2. Data Chunking and Embedding
+
+Process the crawled data, chunk it based on semantic similarity, and create embeddings:
+
+This script reads `cuda_documentation.csv`, chunks the content, and saves the result to `chunked_csvfile.csv`.
+
+### 3. Uploading to Milvus
+
+Upload the chunked and embedded data to the Milvus vector database:
+This script reads `chunked_data.csv` and uploads the data to the Milvus vectordb collection.
+
+### 4. Retrieval and Re-ranking
+
+To run the retrieval system:
+This script implements query expansion, hybrid retrieval (BM25 + BERT), and re-ranking.
+
+### 5. Question Answering
+
+To start the question-answering system:
+This integrates the retrieval system with the chosen LLM to answer user queries.
+
+### 6. User Interface (Optional)
+
+implemented, run the user interface:
+
+streamlit run ui.py
 
