@@ -54,6 +54,3 @@ Query history tracking
 git clone https://github.com/aviraen/NvidiaQAapp.git
 cd cuda_crawler
 
-2. create virtual Env
-```bash
-
