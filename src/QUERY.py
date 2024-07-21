@@ -50,4 +50,4 @@ index_params = {
 }
 collection.create_index(field_name="embedding", index_params=index_params)
 collection.load()
-print("Chunked data with embeddings inserted, indexed, and loaded into Milvus.")
+print("Successfully okay")
