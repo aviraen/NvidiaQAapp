@@ -4,8 +4,8 @@ from pymilvus import connections, Collection
 from rank_bm25 import BM25Okapi
 import nltk
 from nltk.corpus import wordnet
-import torch
 import numpy as np
+import torch
 
 ZILLIZ_ENDPOINT = "https://in03-60169b2a1d6a8d8.api.gcp-us-west1.zillizcloud.com"
 ZILLIZ_TOKEN = ""
