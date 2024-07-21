@@ -33,4 +33,6 @@ Query history tracking
 ## Installation
 
 Clone the repository:
-
+```bash
+git clone https://github.com/your-username/cuda-doc-qa.git
+cd cuda_crawler
