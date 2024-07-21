@@ -29,13 +29,13 @@ def answer_question(query, context):
     return response.choices[0].message['content'].strip()
 
 def process_query(query):
-    top_docs = get_top_docs(query)
-    context = " ".join(top_docs)
+    expanded_query = query_expansion(query)
+    retrieved_ids = hybrid_retrieval(expanded_query)
+    reranked_ids = rerank(query, retrieved_ids)
+    
+    top_docs = collection.query(expr=f"id in {reranked_ids[:3]}", output_fields=["content"])
+    context = " ".join([doc['content'] for doc in top_docs])
+    
     answer = answer_question(query, context)
+    
     return answer
-
-if __name__ == "__main__":
-    test_query = "What is the difference between global and shared memory in CUDA?"
-    answer = process_query(test_query)
-    print(f"Question: {test_query}")
-    print(f"Answer: {answer}")
