@@ -34,5 +34,20 @@ Query history tracking
 
 Clone the repository:
 ```bash
-git clone 
+git clone https://github.com/aviraen/NvidiaQAapp.git
 cd cuda_crawler
+Create and activate a virtual environment:
+```bash
+python -m venv venv
+Install required packages
+```bash
+pip install -r requirements.txt
+
+# Obtaining Zilliz Cloud Token
+## To use the Zilliz Cloud (Milvus) service:
+
+Sign up for a Zilliz Cloud account at cloud.zilliz.com.
+Create a new cluster or use an existing one.
+In the cluster details, find the "Endpoint" and "Token" information.
+Copy these values; you'll need them for configuration.
+
