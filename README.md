@@ -1,4 +1,4 @@
-## ![download (1)](https://github.com/user-attachments/assets/f6c57ddc-2621-4d1f-b48e-9dd6666f85e5) ![download (5)](https://github.com/user-attachments/assets/636de63f-5fc6-47fc-9497-35ddfd0200ab)                                                                         ![download (2)](https://github.com/user-attachments/assets/9bd300ba-1258-4117-9282-3322dedd1b42)
+## ![download (1)](https://github.com/user-attachments/assets/f6c57ddc-2621-4d1f-b48e-9dd6666f85e5)                                                                         ![download (2)](https://github.com/user-attachments/assets/9bd300ba-1258-4117-9282-3322dedd1b42)
 
 # CUDA Documentation QA System
 ## Table of Contents
@@ -34,5 +34,5 @@ Query history tracking
 
 Clone the repository:
 ```bash
-git clone https://github.com/your-username/cuda-doc-qa.git
+git clone 
 cd cuda_crawler
