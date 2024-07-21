@@ -96,22 +96,6 @@ To use the Zilliz Cloud (Milvus) service:
 - [`Chunking.py`](./Chunking.py): Chunk the data using sementic similrity method and embed them using sentence transformer model.
 - [`README.md`](./README.md): This file.
 
-## Installation
-
-1. Clone the repository:
-    ```bash
-    git clone https://github.com/aviraen/NvidiaQAapp.git
-    cd cuda_crawler
-    ```
-
-2. Create and activate a virtual environment:
-    ```bash
-    python -m venv venv
-    ```
-3. Install required packages:
-    ```bash
-    pip install -r requirements.txt
-    ```
 ## Troubleshooting
 
 **Zilliz Cloud Connection Issues:**
