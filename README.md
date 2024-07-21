@@ -17,4 +17,11 @@ This project implements a sophisticated question-answering system for NVIDIA CUD
 - Git
 ### Installation
 1. Clone the repository:
+2. Create a virtual environment:
+3. Install required packages:
+4. Set up environment variables:
+Create a `.env` file in the project root and add:
+ZILLIZ_ENDPOINT=your_zilliz_endpoint
+ZILLIZ_TOKEN=your_zilliz_token
+OPENAI-API-KEY
 
