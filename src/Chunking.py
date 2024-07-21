@@ -2,10 +2,14 @@ import pandas as pd
 from sentence_transformers import SentenceTransformer
 from sklearn.metrics.pairwise import cosine_similarity
 import numpy as np
+
 model = SentenceTransformer('sentence-transformers/all-MiniLM-L6-v2')
+
 def get_embeddings(text, model):
     return model.encode(text)
-df = pd.read_csv(r'C:\Users\Admin\cuda_crawler\DATA\processed_file.csv')
+
+df = pd.read_csv('processed_file.csv')
+
 def chunk_text(df, model, max_chunk_size=500):
     chunks = []
     current_chunk = []
@@ -44,5 +48,5 @@ def chunk_text(df, model, max_chunk_size=500):
 
     return pd.DataFrame(chunks)
 chunked_df = chunk_text(df, model)
-chunked_df.to_csv(r'C:\Users\Admin\cuda_crawler\DATA\chunked_csvfile.csv', index=False)
+chunked_df.to_csv('chunked_csvfile.csv', index=False)
 
