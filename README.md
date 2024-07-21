@@ -24,8 +24,13 @@ Query history tracking
 
 ## Prerequisites
 
-Python 3.8+
-pip
-Git
-Zilliz Cloud account
-OpenAI API key
+1. Python 3.8+
+2. pip
+3. Git
+4. Zilliz Cloud account
+5. OpenAI API key
+
+## Installation
+
+Clone the repository:
+
